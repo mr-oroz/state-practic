@@ -8,21 +8,15 @@ class State1 extends Component {
         }
     }
     handler = () => {
-        let currentCount = this.state.count;
-        currentCount++;
-        this.setState({
-            count: currentCount
-        })
+        this.setState(state =>  ({
+            count: ++state.count
+        }))
     }
 
     minHandler = () => {
-        let currentCount = this.state.count;
-        if (currentCount > 1) {
-            currentCount--;
-        }
-        this.setState({
-            count: currentCount
-        })
+        this.setState(state => ({
+            count: state.count > 1 ? --state.count : state.count
+        }))
     }
     render() {
         return (
