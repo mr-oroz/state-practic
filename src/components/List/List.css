@@ -1,0 +1,15 @@
+.likeShow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    color: crimson;
+}
+.like {
+    color: red;
+}
+
+.zvezda {
+    color: yellow
+}
