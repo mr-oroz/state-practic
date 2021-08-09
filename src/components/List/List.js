@@ -25,7 +25,7 @@ class List extends Component {
     }
 
     render() {
-        const {label} = this.props;
+        const {label, onDelete} = this.props;
         const {important, like} = this.state
         let zvezda = 'zvezdaText';
         let Text = 'textD'
@@ -43,6 +43,7 @@ class List extends Component {
                     <div>like</div>
                 </div>
                 <div className={zvezda} onClick={this.inImportant}>zvezda</div>
+                <button onClick={onDelete}>delete</button>
             </div>
         );
     }
